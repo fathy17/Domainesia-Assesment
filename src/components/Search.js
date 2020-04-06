@@ -38,7 +38,11 @@ export default class Search extends Component {
           <form onSubmit={this.onSubmit} className="input-group mb-3">
             <input
               type="text"
-              className="form-control"
+              className={`form-control ${
+                !this.state.result.length && this.state.showResult === true
+                  ? "is-invalid"
+                  : null
+              }`}
               placeholder="namadomain.com"
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
