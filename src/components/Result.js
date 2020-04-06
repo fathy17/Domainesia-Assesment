@@ -22,7 +22,7 @@ export default class Result extends Component {
                         0,
                         this.props.input.indexOf(".")
                       )}
-                      {item.nama}
+                      <strong>{item.nama}</strong>
                     </p>
                     <small style={{ color: "#54a9f2" }}>Rp. {item.harga}</small>
                   </div>
